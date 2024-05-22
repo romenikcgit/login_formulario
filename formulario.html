@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./formulario.css">
+</head>
+<body>
+    <form action="./formulario.html" method="post">
+    <div class="formulario_interno">
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email"  placeholder="Digite seu e-mail" required><br><br>
+
+        <label>Quais as cores correspondentes a sigla RGB?</label><br>
+        <input type="checkbox" id="azul" name="cores" value="azul">
+        <label for="azul">Azul</label><br>
+        <input type="checkbox" id="branco" name="cores" value="branco">
+        <label for="branco">Branco</label><br>
+        <input type="checkbox" id="verde" name="cores" value="verde">
+        <label for="verde">Verde</label><br>
+        <input type="checkbox" id="vermelho" name="cores" value="vermelho">
+        <label for="vermelho">Vermelho</label><br>
+        <input type="checkbox" id="preto" name="cores" value="preto">
+        <label for="preto">Preto</label><br><br>
+
+        <label>Você acha que acertou a resposta da pergunta acima?</label><br>
+        <input type="radio" id="radio1" name="radioOption" value="radio1" required>
+        <label for="radio1">Sim, pode apostar!</label><br>
+        <input type="radio" id="radio2" name="radioOption" value="radio2">
+        <label for="radio2">Rapaz, se acertei ou se errei, eu só sei que a atividade eu fiz!</label><br><br>
+
+        <label for="userInput">Deixe aqui uma breve história sobre você</label><br>
+        <textarea id="userInput" name="userInput" rows="10" cols="20" placeholder="Pode contar de onde você é, sua profissão ou área de estudos, ou ambos, e pode lançar uma fofoca, até prefiro."></textarea><br>
+  
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+    </form>
+
+    <div class="background_formulario">
+        <video autoplay muted loop id="video-bg">
+            <source src="./video/video_formulario.mp4" type="video/mp4">            
+        </video>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>    
+    
+<head>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="formulario.html">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="formulario.html" method="get">
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
+            <input type="password" name="datadenascimento" placeholder="Digite sua data de nascimento" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+    <div class="background_login">
+        <video autoplay muted loop id="video-bg">
+            <source src="./video/video_login.mp4" type="video/mp4">            
+        </video>
+    </div>
+</body>
+</html>
